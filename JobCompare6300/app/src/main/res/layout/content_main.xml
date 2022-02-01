@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:id="@+id/CompareJobs"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:onClick="handleCompareOffers"
+        android:text="Compare Jobs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ComparisonSettings" />
+
+    <Button
+        android:id="@+id/EnterJobDetails"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="4dp"
+        android:onClick="handleCurrentJob"
+        android:text="Enter Current Job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout19" />
+
+    <Button
+        android:id="@+id/EnterJobOffer"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:onClick="handleJobOffer"
+        android:text="Enter Job Offer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterJobDetails" />
+
+    <Button
+        android:id="@+id/ComparisonSettings"
+        android:layout_width="305dp"
+        android:layout_height="64dp"
+        android:onClick="handleComparisonSettings"
+        android:text="Change Comparison Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterJobOffer" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout19"
+        android:layout_width="313dp"
+        android:layout_height="181dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
